@@ -19,13 +19,11 @@ name: build
 
 on:
   push:
-    # Ignore `dependabot` branches, those are handled by `merge-dependabot.yaml`
-    branches:
-      - "!dependabot/**"
+    branches-ignore:
+      - "dependabot/**"
   pull_request:
-    # Ignore `dependabot` branches, those are handled by `merge-dependabot.yaml`
-    branches:
-      - "!dependabot/**"
+    branches-ignore:
+      - "dependabot/**"
 
 permissions: read-all
 
