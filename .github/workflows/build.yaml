@@ -20,12 +20,12 @@ name: build
 on:
   push:
     # Ignore `dependabot` branches, those are handled by `merge-dependabot.yaml`
-    branches-ignore:
-      - dependabot/**
+    branches:
+      - "!dependabot/**"
   pull_request:
     # Ignore `dependabot` branches, those are handled by `merge-dependabot.yaml`
-    branches-ignore:
-      - dependabot/**
+    branches:
+      - "!dependabot/**"
 
 permissions: read-all
 
